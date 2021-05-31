@@ -1,0 +1,37 @@
+/* less */
+@back-color: #fff;
+@size: 100%;
+@padding: 10px;
+
+.moduleLayout {
+  background-color: @back-color;
+  width: @size;
+  height: @size;
+  padding: @padding;
+  display: flex;
+  flex-direction: column;
+  /deep/.ant-form-item {
+    margin-bottom: 5px;
+  }
+}
+
+.row-height {
+  height: @size;
+}
+
+.col-height {
+  height: @size;
+}
+
+.col-height-flex {
+  height: @size;
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-height {
+  flex: 1;
+}
+.ant-input-number-handler-wrap {
+  display: none; //隐藏数字输入框悬浮显示step
+}
